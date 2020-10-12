@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo yum update -y
+sudo yum -y install nginx mysql-server php php-fpm
+sudo rm /var/www/html/index.html
+sudo rm /etc/nginx/conf.d/virtual.conf
+sudo rm /etc/php-fpm.d/www.conf
